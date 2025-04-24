@@ -18,3 +18,5 @@ text = "hello.txt"
 print(text)
 result = text.removesuffix("xt")
 print(result)
+
+
