@@ -14,9 +14,15 @@ class Human:
     def work(self):
         return f"{self.name} is working."
     
-person1  = Human(name="Alice", age=30)  
+    # Adding a callable method to the dataclass
+    def __call__(self):
+        return f"{self.name} is called."
+    
+person1  = Human(name="Asif", age=30)  
 print(person1)
 print(person1.name)
 print(person1.age)
-print(person1.greet())  # Check if person1 is equal to itself
+print(person1.greet()) 
+print(person1.work()) 
+print(person1()) ## Calling the dataclass instance as a callable
 
